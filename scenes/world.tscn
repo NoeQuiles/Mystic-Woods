@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cv7lv8b52kg0i"]
+[gd_scene load_steps=10 format=3 uid="uid://cv7lv8b52kg0i"]
 
 [ext_resource type="Texture2D" uid="uid://dqdqyfx6gxtrr" path="res://art/tilesets/grass.png" id="1_7kbe6"]
 [ext_resource type="Texture2D" uid="uid://d04g8jmag66da" path="res://art/objects/objects.png" id="2_w8spu"]
 [ext_resource type="Texture2D" uid="uid://bab3sfsho24qp" path="res://art/tilesets/plains.png" id="3_u7nq0"]
 [ext_resource type="PackedScene" uid="uid://dx20t7hjv5cfq" path="res://scenes/player.tscn" id="4_xwtuf"]
+[ext_resource type="PackedScene" uid="uid://dntnns35mwj76" path="res://scenes/enemy.tscn" id="5_if7jk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_adb0p"]
 texture = ExtResource("1_7kbe6")
@@ -130,3 +131,7 @@ layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(2, 655362, 7, 262150, 655362, 7, 655368, 655362, 7, 24, 655362, 7, 262163, 655362, 7, 65559, 2, 1, 196633, 2, 1, 720915, 2, 1, 196616, 2, 1, 720900, 2, 1, 589825, 2, 5, 9, 2, 5, 262161, 2, 5, 19, 393218, 7, 655381, 393218, 7, 589836, 393218, 7, 589829, 524290, 6, 131077, 524290, 6, 6, 524290, 6, 65549, 524290, 6, 131094, 524290, 6, 524311, 524290, 6, 655376, 524290, 6, 655371, 327682, 0, 131083, 327682, 0, 196620, 2, 0)
 
 [node name="player" parent="." instance=ExtResource("4_xwtuf")]
+position = Vector2(203, 111)
+
+[node name="enemy" parent="." instance=ExtResource("5_if7jk")]
+position = Vector2(30, 59)
